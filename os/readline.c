@@ -467,7 +467,7 @@ void Yap_InitReadlinePreds(void) {
 
 #else
 bool Yap_InitReadline(Term enable) {
-  return enable == TermTrue && !getenv("INSIDE_EMACS") && !Yap_E]Mbedded;
+  return enable == TermTrue && !getenv("INSIDE_EMACS") && !Yap_Embedded;
 }
 
 void Yap_InitReadlinePreds(void) {}
